@@ -13,11 +13,16 @@ html {
 .upper-bar {
   background-color: var(--second-color);
 }
+.upper-bar .col-md a,
 .upper-bar .col-md,
-.upper-bar .col-md .button {
-  color: var(--text-color);
+.upper-bar .col-md .btn {
+  color: var(--text-color) !important;
 }
-.upper-bar .col-md .button {
+.upper-bar .col-md .btn:hover,
+.upper-bar .col-md .btn:focus {
+  color: #fff !important;
+}
+.upper-bar .col-md .btn {
   border: 1px solid var(--main-color);
   padding: 5px 12px;
   cursor: pointer;
@@ -119,7 +124,7 @@ html {
 #blog .row p {
   color: var(--text2-color);
 }
-#blog .row span {
+#blog .row a {
   color: var(--main-color);
 }
 
@@ -181,10 +186,14 @@ html {
   color: #fff;
 }
 #contact .btn-outline-light {
-  pointer-events: none;
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 20px;
+}
+#contact .btn-outline-light:hover,
+#contact .btn-outline-light:focus {
+  background-color: var(--main-color);
+  color: #ffffff;
 }
 /* start footer */
 #footer {
@@ -221,7 +230,6 @@ html {
 #footer + .container-fluid .row {
   color: var(--text-color);
 }
-.container-fluid .row .icons {
-  display: flex;
-  justify-content: space-between;
+.container-fluid .row .icons svg {
+  margin: 0 5px;
 }
