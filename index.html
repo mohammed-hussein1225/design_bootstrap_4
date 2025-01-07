@@ -524,5 +524,15 @@
     <script src="js/popper.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- مكتبة لدعم toch in mobile  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script>
+      $(".slide").swipe({
+        swipe: function (event, direction) {
+          if (direction === "left") $(".slide").carousel("next");
+          if (direction === "right") $(".slide").carousel("prev");
+        },
+      });
+    </script>
   </body>
 </html>
