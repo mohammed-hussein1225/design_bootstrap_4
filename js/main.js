@@ -10,7 +10,7 @@ allBtn.forEach((btn) => {
 // add class  opacity
 
 // images
-let allimg = document.querySelectorAll("#work .work-image img");
+let allimg = document.querySelectorAll("#work .work-image div");
 let web = document.querySelectorAll("#work .work-image  .web");
 let logo = document.querySelectorAll("#work .work-image  .logo");
 let graphic = document.querySelectorAll("#work .work-image  .graphic");
@@ -25,8 +25,8 @@ let markBtn = document.querySelector("#work .marketing");
 let videoBtn = document.querySelector("#work .video");
 
 function add_opacity(element) {
-  allimg.forEach((ele) => (ele.style.opacity = "0.1"));
-  element.forEach((ele) => (ele.style.opacity = "1"));
+  allimg.forEach((ele) => (ele.style.display = "none"));
+  element.forEach((ele) => (ele.style.display = "block"));
 }
 all.addEventListener("click", () => add_opacity(allimg));
 webBtn.addEventListener("click", () => add_opacity(web));
