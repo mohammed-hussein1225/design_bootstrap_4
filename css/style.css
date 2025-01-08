@@ -95,8 +95,7 @@ html {
   box-shadow: none;
 }
 #work .btn.active,
-#work .btn:hover,
-#work .btn:focus {
+#work .btn:hover {
   outline: 1px solid var(--main-color);
   background-color: var(--main-color);
   color: var(--white);
